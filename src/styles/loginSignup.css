@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    line-height: normal;
+}
+
+p, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:focus,
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: #AAA;
+    opacity: 1; /* Firefox */
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #AAA;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #AAA;
+    opacity: 1;
+}
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #AAA;
+    opacity: 1;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #AAA;
+}
+
+
+.loginHomeMainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 4%;
+}
+
+.loginHomeLeftCon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 6%;
+}
+
+.loginHomeLeftCon h2{
+    color: #FFF;
+    font-family: Mukta;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.loginHomeLeftCon p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.loginAndSignupBlock{
+    border-radius: 10px;
+    background: #F1F6F9;
+    box-shadow: 0px 4px 20px 0px rgba(194, 194, 194, 0.25);
+    width: 40%;
+    height: 100%;
+    max-width: 679px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4%;
+    padding-bottom: 2%;
+    padding-top: 4%;
+}
+
+.signupLoginHeading{
+    color: #000;
+    font-family: Mukta;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31px;
+    outline-offset: 2rem;
+    margin-bottom: 29px;
+    border-bottom: 4px solid #4F4F4F;
+
+}
+
+.signupLoginTopContent{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.signupLoginTopContent span{
+    font-weight: 600;
+}
+
+.loginSignupInputFieldCon{
+    max-width: 531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.loginSignupInputField{
+    border-radius: 4px;
+    border: 1px solid #AAA;
+    height: 48px;
+    width: 100%;
+    color: #242424;
+    font-family: Mukta;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.loginSignupInputLable{
+    color: #242424;
+    font-family: Mukta;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.loginSignupBtnCon{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.loginSignupBtn{
+    border-radius: 4px;
+    background: #2F80ED;
+    color: var(--Color---White, #FFF);
+    font-family: Mukta;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    height: 42px;
+    border: none;
+    max-width: 272px;
+    width: 100%;
+    user-select: none;
+}
+
+.requiredStar{
+    color: #EB5757;
+    font-family: Mukta;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.redirectLoginText{
+    color: #242424;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.redirectLoginText span{
+    color: #27AE60;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.loginGetHelpText{
+    color: #2F80ED;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    cursor: pointer;
+    user-select: none;
+    gap:4px;
+}
+
+.otpResendText{
+    color: #4F4F4F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.loginSignupBackBtn{
+    color: #4F4F4F;
+    font-family: Mukta;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    gap:3px;
+    margin-bottom: 16px;
+}
+
+.resendOtpBtn{
+    color: #27ABAE;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.errorInputBorder{
+    border-color: #EB5757;
+}
+
+.inputErrorMsg{
+    color: #EB5757;
+    font-family: Mukta;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+    width: 100%;
+    margin-bottom: -18px;
+}
